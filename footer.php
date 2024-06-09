@@ -1,4 +1,6 @@
-</div>
+<?php if (currentURL() === '/') : ?>
+  </div>
+<?php endif; ?>
 
 
 <div class="background">

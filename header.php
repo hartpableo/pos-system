@@ -8,4 +8,7 @@
   <?php echo renderCSS('style.min.css'); ?>
 </head>
 <body class="min-h-screen font-primary py-8 isolate">
+
+  <?php if (currentURL() === '/') : ?>
   <div class="dashboard-grid grid max-w-[98%] mx-auto gap-2">
+  <?php endif; ?>
