@@ -1,0 +1,43 @@
+@import './font-face.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+@layer base {
+  .container {
+    @apply mx-auto px-4 !max-w-[768px];
+  }
+}
+/* Base */
+
+/* Components */
+@layer components {
+  .highlight {
+    @apply inline-block relative text-blue-300;
+    cursor: inherit;
+
+    &:before {
+      @apply content-[""] w-[110%] h-[110%] z-[-1] bg-red-700 absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(-3.5deg);
+      pointer-events: none;
+    }
+
+  }
+
+  .btn {
+    @apply inline-block transition font-bold p-2 leading-none rounded-md bg-red-500 hover:bg-red-600 text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-500 hover:bg-gray-600;
+  }
+
+  .btn-with-icon {
+    @apply inline-flex justify-center items-center gap-1;
+  }
+}
+/* Components */

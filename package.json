@@ -1,29 +1,25 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "guide-to-moalboal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./css/style.css -o ./css/style.min.css --watch --minify",
+    "build": "npx tailwindcss -i ./css/style.css -o ./css/style.min.css --minify"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hartpableo/guide-to-moalboal.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hartpableo/guide-to-moalboal/issues"
+  },
+  "homepage": "https://github.com/hartpableo/guide-to-moalboal#readme",
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "vite": "^5.2.0"
+    "tailwindcss": "^3.4.4"
   }
 }

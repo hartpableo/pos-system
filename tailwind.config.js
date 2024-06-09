@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./static/**/*.html",
+    "./js/**/*.js",
+    "./header.php",
+    "./footer.php",
+    "./views/**/*.php",
   ],
   theme: {
+    fontFamily: {
+      primary: ["Nunito", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],

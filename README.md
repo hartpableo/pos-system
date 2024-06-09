@@ -1,8 +1,3 @@
-# React + Vite
+# Moalboal Tips
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple platform for sharing information about Moalboal, Cebu, Philippines in a minimalistic way. A good way for tourists/visitors to know more about the place and what to expect. Also a good way to know what other people, both locals and tourists, think about the place. This is also a good platform to get recommendations and tips from other people.
