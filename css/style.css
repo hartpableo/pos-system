@@ -27,7 +27,7 @@
   }
 
   .dashboard-grid {
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: 8.5fr 3.5fr;
   }
 
   @media all and (min-width: 1200px) {
