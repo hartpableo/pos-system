@@ -81,4 +81,5 @@
 
 </div>
 
+<?php getTemplate('forms/add-product'); ?>
 <?php getTemplate('content/sidebar'); ?>

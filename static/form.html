@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Know what to expect and get the best tips from other people about Moalboal">
+  <title>POS</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body class="min-h-screen font-primary py-8 isolate">
+
+  <main>
+    <div class="container">
+
+      <form class="fixed z-50 left-1/2 top-1/2 -translate-x-2/4 -translate-y-2/4 p-4 shadow-2xl bg-white w-full max-w-[600px] rounded-xl">
+        <h2 class="text-xl font-bold mb-4">
+          Add a new item
+        </h2>
+
+        <div class="mb-5">
+          <label for="product_name" class="block mb-2 text-sm font-medium text-gray-900">
+            Product Name
+          </label>
+          <input type="text" id="product_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="e.g. Milkshake" />
+        </div>
+        <div class="mb-5">
+          <label for="product_price" class="block mb-2 text-sm font-medium text-gray-900">
+            Price
+          </label>
+          <div class="flex">
+            <span class="inline-flex items-center px-3 text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md font-bold text-2xl">
+              ₱
+            </span>
+            <input type="text" id="product_price" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="149.00">
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label for="categories" class="block mb-2 text-sm font-medium text-gray-900">
+            Product Categories
+          </label>
+          <textarea id="categories" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 resize-y"></textarea>
+          <p id="categoriesHelp" class="text-xs mt-2">Separate each categories by commas (e.g. Breakfast, Lunch, Dinner).</p>
+        </div>
+
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+          Add Product
+        </button>
+      </form>
+
+    </div>
+  </main>
+
+</body>
+</html>

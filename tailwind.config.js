@@ -6,6 +6,7 @@ module.exports = {
     "./header.php",
     "./footer.php",
     "./views/**/*.php",
+    "./templates/**/*.php",
   ],
   theme: {
     fontFamily: {
