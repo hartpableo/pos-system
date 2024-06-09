@@ -10,5 +10,5 @@
 <body class="min-h-screen font-primary py-8 isolate">
 
   <?php if (currentURL() === '/') : ?>
-  <div class="dashboard-grid grid max-w-[98%] mx-auto gap-2">
+  <div class="dashboard-grid grid w-[98%] max-w-[1920px] mx-auto gap-2">
   <?php endif; ?>
