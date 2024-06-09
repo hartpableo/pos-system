@@ -7,260 +7,214 @@
   <title>Guide to Moalboal | Deals, Tips, Comments, and more...</title>
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
-<body class="bg-yellow-100 min-h-screen font-primary">
+<body class="min-h-screen font-primary py-8">
+  <div class="dashboard-grid grid max-w-[90%] mx-auto gap-2">
 
-  <!-- Header -->
-  <header role="banner" class="pt-5 mb-8 md:mb-16 pb-8 md:pb-16 border-b border-b-solid border-b-gray-500">
-    <div class="container text-center flex flex-col justify-start items-stretch pt-20">
+    <!-- Left Content -->
+    <div>
+      <header class="mb-8">
+        <div class="container">
 
-      <nav class="fixed top-4 left-1/2 -translate-x-2/4 w-[calc(100%_-_2rem)] shadow-md py-2 px-2 bg-white rounded-lg grid grid-cols-3 justify-items-center items-center max-w-[768px] z-50">
-        <div class="justify-self-start">
-          <a
-            href="#"
-            class="btn text-sm md:text-base"
-          >
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg inline" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-            </svg>
-            Add a Tip
-          </a>
+          <h1 class="font-bold text-6xl leading-tight mb-4">My Restaurant</h1>
+
+          <nav>
+            <ul class="flex flex-wrap gap-3 justify-start items-center" aria-label="Filters">
+              <li>
+                <button class="font-bold text-base py-1 px-3 rounded-md bg-red-500 text-white hover:bg-red-400 transition-all">
+                  All
+                </button>
+              </li>
+              <li>
+                <button class="font-bold text-base py-1 px-3 rounded-md bg-red-500 text-white hover:bg-red-400 transition-all">
+                  Breakfast
+                </button>
+              </li>
+              <li>
+                <button class="font-bold text-base py-1 px-3 rounded-md bg-red-500 text-white hover:bg-red-400 transition-all">
+                  Hot Drinks
+                </button>
+              </li>
+              <li>
+                <button class="font-bold text-base py-1 px-3 rounded-md bg-red-500 text-white hover:bg-red-400 transition-all">
+                  Cold Drinks
+                </button>
+              </li>
+              <li>
+                <button class="font-bold text-base py-1 px-3 rounded-md bg-red-500 text-white hover:bg-red-400 transition-all">
+                  Frappes
+                </button>
+              </li>
+            </ul>
+          </nav>
+
         </div>
+      </header>
 
-        <div class="font-bold leading-none text-xl">
-          Guide to<br> Moalboal
-        </div>
+      <main>
+        <h2 class="sr-only">Product Results</h2>
 
-        <div class="justify-self-end">
-          <a
-            href="mailto:pableoh@gmail.com?subject=Feedback%20from%20Guide%20to%20Moalboal"
-            class="btn btn-secondary text-sm md:text-base"
-          >
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text-fill inline" viewBox="0 0 16 16">
-              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
-            </svg>
-            Leave a feedback
-          </a>
-        </div>
-      </nav>
+        <div class="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-      <h1 class="text-4xl md:text-5xl font-extrabold mt-8 leading-tight md:leading-relaxed">
-        Want to visit <span class="highlight">Moalboal</span>?<br>
-        <span class="text-xl md:text-3xl leading-tight md:leading-relaxed block mt-3 md:mt-0">Check out what other people both locals and tourists say!</span>
-      </h1>
+          <!-- Card -->
+          <div class="relative">
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                </a>
+                <div class="flex items-center mt-2.5 justify-between">
+                  <span class="text-3xl font-bold text-gray-900">₱75</span>
+                  <button type="button" class="btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
 
-    </div>
-  </header>
-  <!-- Header -->
-
-  <main role="main" class="mb-8 md:mb-16 pb-8 md:pb-16 border-b border-b-solid border-b-gray-500">
-    <div class="container grid grid-cols-1 gap-4">
-
-      <h2 class="sr-only">Posted tips by the community</h2>
-
-      <!-- Post -->
-      <article role="article" class="shadow rounded-lg bg-white p-6 text-surface shadow-secondary-1">
-        <p class="mb-4 text-base">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-
-        <div class="text-sm text-gray-500 mt-6 flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-center flex-wrap">
-
-          <p>
-            20 likes | 10 dislikes
-          </p>
-
-          <div class="md:order-last">
-            posted by <a href="#" class="hover:underline">hartpableo</a>
-            | <time datetime="2021-01-01">Jan 1, 2021</time>
+          <div class="relative">
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                </a>
+                <div class="flex items-center mt-2.5 justify-between">
+                  <span class="text-3xl font-bold text-gray-900">₱75</span>
+                  <button type="button" class="btn">Add to cart</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="flex justify-start md:justify-end items-stretch mt-3 md:mt-0 gap-2">
-            <form action="" method="post">
+          <div class="relative">
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                </a>
+                <div class="flex items-center mt-2.5 justify-between">
+                  <span class="text-3xl font-bold text-gray-900">₱75</span>
+                  <button type="button" class="btn bg-red-700">
+                    Add to cart
+                    <span>x1</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <input type="hidden" name="csrf_token" value="111111">
-              <input type="hidden" name="upvote" value="1">
+          <div class="relative">
+            <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                </a>
+                <div class="flex items-center mt-2.5 justify-between">
+                  <span class="text-3xl font-bold text-gray-900">₱75</span>
+                  <button type="button" class="btn bg-red-700">
+                    Add to cart
+                    <span>x3</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <button type="submit" class="btn btn-with-icon">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </div>
+
+      </main>
+
+    </div>
+    <!-- Left Content -->
+
+    <!-- Right Content -->
+    <div class="relative z-10 pt-6">
+      <div class="sticky top-4">
+
+        <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
+
+        <ul aria-label="Cart Items" class="flex flex-col gap-4 justify-start items-stretch pb-8 mb-8 border-b-2 border-b-solid border-b-gray-500">
+          <li class="flex justify-between items-center">
+            <div class="flex justify-start items-center">
+              <img class="block rounded w-14 h-14 mr-2" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="prod image">
+              <div>
+                <h3 class="font-bold text-lg leading-tight block">Product Name</h3>
+                <p>
+                  <span class="mr-2">Quantity: <span>1</span></span>
+                  <button type="button" class="font-bold text-lg inline-block align-middle mr-1 w-5 h-5 bg-gray-600 text-white leading-none">
+                    -
+                  </button>
+                  <button type="button" class="font-bold text-lg inline-block align-middle w-5 h-5 bg-green-600 text-white leading-none">
+                    +
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start items-center">
+              <div class="text-xl font-bold">
+                ₱75
+              </div>
+              <button type="button" aria-label="Remove this item from cart" class="btn ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                  <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                 </svg>
-                upvote
               </button>
-            </form>
-            <a href="#" class="btn btn-secondary btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-              </svg>
-              downvote
-            </a>
-          </div>
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="flex justify-start items-center">
+              <img class="block rounded w-14 h-14 mr-2" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="prod image">
+              <div>
+                <h3 class="font-bold text-lg leading-tight block">Product Name</h3>
+                <p>Quantity: <span>1</span></p>
+              </div>
+            </div>
+            <div class="text-xl font-bold">
+              ₱75
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="flex justify-start items-center">
+              <img class="block rounded w-14 h-14 mr-2" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="prod image">
+              <div>
+                <h3 class="font-bold text-lg leading-tight block">Product Name</h3>
+                <p>Quantity: <span>1</span></p>
+              </div>
+            </div>
+            <div class="text-xl font-bold">
+              ₱75
+            </div>
+          </li>
+        </ul>
+
+        <!-- Total -->
+        <div class="flex justify-between items-center">
+          <span class="block text-2xl font-bold">
+            Total:
+          </span>
+          <span class="block text-3xl font-bold">
+            ₱225
+          </span>
+        </div>
+        <!-- Total -->
+
+        <div class="flex justify-between items-stretch flex-wrap mt-10 gap-4">
+          <button type="button" class="btn text-lg bg-gray-500 hover:bg-gray-400 focus:bg-gray-400 flex-grow">
+            Cancel Order
+          </button>
+          <button type="button" class="btn text-lg bg-green-600 hover:bg-green-500 focus:bg-green-500 flex-grow">
+            Proceed
+          </button>
         </div>
 
-      </article>
-      <!-- Post -->
-
-      <article role="article" class="shadow rounded-lg bg-white p-6 text-surface shadow-secondary-1">
-        <p class="mb-4 text-base">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-
-        <div class="text-sm text-gray-500 mt-6 flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-center flex-wrap">
-
-          <p>
-            20 likes | 10 dislikes
-          </p>
-
-          <div class="md:order-last">
-            posted by <a href="#" class="hover:underline">hartpableo</a>
-            | <time datetime="2021-01-01">Jan 1, 2021</time>
-          </div>
-
-          <div class="flex justify-start md:justify-end items-stretch mt-3 md:mt-0 gap-2">
-            <a href="#" class="btn btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
-              upvote
-            </a>
-            <a href="#" class="btn btn-secondary btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-              </svg>
-              downvote
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-      <article role="article" class="shadow rounded-lg bg-white p-6 text-surface shadow-secondary-1">
-        <p class="mb-4 text-base">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-
-        <div class="text-sm text-gray-500 mt-6 flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-center flex-wrap">
-
-          <p>
-            20 likes | 10 dislikes
-          </p>
-
-          <div class="md:order-last">
-            posted by <a href="#" class="hover:underline">hartpableo</a>
-            | <time datetime="2021-01-01">Jan 1, 2021</time>
-          </div>
-
-          <div class="flex justify-start md:justify-end items-stretch mt-3 md:mt-0 gap-2">
-            <a href="#" class="btn btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
-              upvote
-            </a>
-            <a href="#" class="btn btn-secondary btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-              </svg>
-              downvote
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-      <article role="article" class="shadow rounded-lg bg-white p-6 text-surface shadow-secondary-1">
-        <p class="mb-4 text-base">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-
-        <div class="text-sm text-gray-500 mt-6 flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-center flex-wrap">
-
-          <p>
-            20 likes | 10 dislikes
-          </p>
-
-          <div class="md:order-last">
-            posted by <a href="#" class="hover:underline">hartpableo</a>
-            | <time datetime="2021-01-01">Jan 1, 2021</time>
-          </div>
-
-          <div class="flex justify-start md:justify-end items-stretch mt-3 md:mt-0 gap-2">
-            <a href="#" class="btn btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
-              upvote
-            </a>
-            <a href="#" class="btn btn-secondary btn-with-icon">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-              </svg>
-              downvote
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-      <!-- Bottom -->
-      <div class="mt-8 md:mt-12 pt-8 md:pt-12 border-t border-t-solid border-t-gray-300">
-        <h2 class="text-2xl font-bold mb-2 leading-tight">You've reached the end.</h2>
-        <p>Post your own tip now. No matter how big or small, it will surely help especially the first-timers!</p>
-        <a href="#" class="btn mt-4 text-lg px-5">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg inline" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-          </svg>
-          Post a tip now
-        </a>
       </div>
-
-      <div class="mt-4">
-        <h2 class="text-2xl font-bold mb-2 leading-tight">Let people see you!</h2>
-        <p>With people visiting this web page, they can easily see the stuff you are promoting.</p>
-        <a href="#" class="btn mt-4 text-lg px-5">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes inline" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-            <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.5 4.5 0 0 1 7.965 13a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242s1.46-.118 2.152-.242a27 27 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434m6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434"/>
-          </svg>
-          Advertise here now
-        </a>
-      </div>
-
-      <div class="mt-4">
-        <h2 class="text-2xl font-bold mb-2 leading-tight">About "Guide To Moalboal"</h2>
-        <p>A simple platform for sharing information about Moalboal, Cebu, Philippines. A good way for tourists/visitors to know more about the place and what to expect. Also a good way to know what other people, both locals and tourists, think about the place. This is a good platform to get recommendations and tips from other people.</p>
-      </div>
-      <!-- Bottom -->
-
     </div>
-  </main>
+    <!-- Right Content -->
 
-  <footer role="contentinfo" class="pb-8 md:pb-20">
-    <div class="container">
-      <ul aria-label="Links" class="flex flex-col justify-start items-start gap-4">
-        <li>
-          <a href="#" class="font-bold text-lg leading-tight hover:ml-4 transition-all">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ad-fill inline mr-1" viewBox="0 0 16 16">
-              <path d="M11.35 8.337c0-.699-.42-1.138-1.001-1.138-.584 0-.954.444-.954 1.239v.453c0 .8.374 1.248.972 1.248.588 0 .984-.44.984-1.2zm-5.413.237-.734-2.426H5.15l-.734 2.426h1.52z"/>
-              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm6.209 6.32c0-1.28.694-2.044 1.753-2.044.655 0 1.156.294 1.336.769h.053v-2.36h1.16V11h-1.138v-.747h-.057c-.145.474-.69.804-1.367.804-1.055 0-1.74-.764-1.74-2.043v-.695zm-4.04 1.138L3.7 11H2.5l2.013-5.999H5.9L7.905 11H6.644l-.47-1.542H4.17z"/>
-            </svg>
-            Advertise in this platform
-          </a>
-        </li>
-        <li>
-          <a href="#" class="font-bold text-lg leading-tight hover:ml-4 transition-all">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots-fill inline mr-1" viewBox="0 0 16 16">
-              <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-            </svg>
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
+  </div>
 </body>
 </html>

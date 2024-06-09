@@ -7,27 +7,13 @@
 /* Base */
 @layer base {
   .container {
-    @apply mx-auto px-4 !max-w-[768px];
+    @apply mx-auto px-4;
   }
 }
 /* Base */
 
 /* Components */
 @layer components {
-  .highlight {
-    @apply inline-block relative text-blue-300;
-    cursor: inherit;
-
-    &:before {
-      @apply content-[""] w-[110%] h-[110%] z-[-1] bg-red-700 absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%) rotate(-3.5deg);
-      pointer-events: none;
-    }
-
-  }
-
   .btn {
     @apply inline-block transition font-bold p-2 leading-none rounded-md bg-red-500 hover:bg-red-600 text-white;
   }
@@ -38,6 +24,16 @@
 
   .btn-with-icon {
     @apply inline-flex justify-center items-center gap-1;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 7fr 5fr;
+  }
+
+  @media all and (min-width: 1200px) {
+    .dashboard-grid {
+      grid-template-columns: 9.5fr 2.5fr;
+    }
   }
 }
 /* Components */
