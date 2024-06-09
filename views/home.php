@@ -1,39 +1,84 @@
-<?php
+<div>
 
-use App\CSRFToken;
-use App\Database;
+  <?php getTemplate('partials/header'); ?>
 
-$db = new Database();
-$tokenizer = new CSRFToken();
-$tokenizer->generateToken();
+  <main>
+    <h2 class="sr-only">Product Results</h2>
 
-$tips = $db->findAll('SELECT *, (likes - dislikes) as score FROM tips WHERE approved = 1 ORDER BY score DESC');
-?>
+    <div class="container grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
 
-  <main role="main" class="mb-8 md:mb-16 pb-8 md:pb-16 border-b border-b-solid border-b-gray-500">
-    <div class="container grid grid-cols-1 gap-4">
+      <!-- Card -->
+      <div class="relative">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            </a>
+            <div class="flex items-center mt-2.5 justify-between">
+              <span class="text-3xl font-bold text-gray-900">₱75</span>
+              <button type="button" class="btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
 
-      <div class="mb-2 text-sm">
-        <h2 class="text-2xl leading-tight font-light">Posted tips by the community</h2>
-        <p>You can upvote or downvote the posted tips, or even add your own. No login required!</p>
+      <div class="relative">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            </a>
+            <div class="flex items-center mt-2.5 justify-between">
+              <span class="text-3xl font-bold text-gray-900">₱75</span>
+              <button type="button" class="btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <?php if (!empty($tips)) : ?>
-        <?php foreach ($tips as $tip) : ?>
-          <?php
-            getTemplate(
-              'content/card--post',
-              ['tip' => $tip]
-            );
-          ?>
-        <?php endforeach; ?>
-      <?php else : ?>
-        <p class="text-lg my-10 font-semibold text-gray-500">No tips yet.</p>
-      <?php endif; ?>
+      <div class="relative">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            </a>
+            <div class="flex items-center mt-2.5 justify-between">
+              <span class="text-3xl font-bold text-gray-900">₱75</span>
+              <button type="button" class="btn bg-red-700">
+                Add to cart
+                <span>x1</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <?php require  BASE_PATH . '/templates/partials/bottom-infos.php'; ?>
+      <div class="relative">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <img class="p-4 rounded-t-lg block" src="https://fastly.picsum.photos/id/906/300/200.jpg?hmac=WkkxahWfLBir2f3u6ewCC5eLdxOevIcK8dsEpaEN8W8" alt="product image" />
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            </a>
+            <div class="flex items-center mt-2.5 justify-between">
+              <span class="text-3xl font-bold text-gray-900">₱75</span>
+              <button type="button" class="btn bg-red-700">
+                Add to cart
+                <span>x3</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
+
   </main>
 
-<?php
+</div>
+
+<?php getTemplate('content/sidebar'); ?>
