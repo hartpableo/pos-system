@@ -1,3 +1,4 @@
 node_modules
 .ddev
 .idea
+css/style.min.css
