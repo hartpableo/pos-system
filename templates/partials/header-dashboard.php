@@ -1,8 +1,8 @@
 <header class="mb-8">
   <div class="container">
     <h1 class="leading-none text-4xl mb-4 font-bold">Dashboard</h1>
-    <nav>
-      <ul class="flex justify-start items-center flex-wrap gap-2">
+    <nav class="flex justify-between items-start">
+      <ul class="flex justify-start items-center flex-wrap gap-2" aria-label="Dashboard Menu">
         <li>
           <a href="/dashboard" class="btn <?php echo isCurrentPage('/dashboard') ? 'pointer-events-none opacity-60' : ''; ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2 inline mr-1" viewBox="0 0 16 16">
