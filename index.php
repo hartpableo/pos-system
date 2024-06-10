@@ -9,15 +9,14 @@ require_once 'config.php';
 require_once 'includes/index.php';
 
 $db = new Database();
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-$method = $_SERVER['REQUEST_METHOD'];
-if (isset($_POST['_method'])) {
-  $method = $_POST['_method'];
-}
+
+// Enable debug
+DEBUG_ENABLED ? ini_set('display_errors', 1) : ini_set('display_errors', 0);
 
 // Document.
 require 'header.php';
-route($uri, $method);
+// see includes/routes.php
+$router->route($uri, $method);
 require 'footer.php';
 
 // Unset sessions.
