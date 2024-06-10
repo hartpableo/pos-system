@@ -12,4 +12,4 @@ if (isset($_POST['_method'])) {
 $router->add('GET', '/', 'home');
 
 // Dashboard
-$router->add('GET', '/dashboard/add-item', 'dashboard/add-item');
+$router->add('GET', '/dashboard', 'dashboard/main');

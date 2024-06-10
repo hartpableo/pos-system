@@ -151,7 +151,7 @@ function currentURL() {
   return $_SERVER['REQUEST_URI'];
 }
 
-function getURL($value) {
+function isCurrentPage($value) {
   return $_SERVER['REQUEST_URI'] === $value;
 }
 
