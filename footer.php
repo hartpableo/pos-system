@@ -1,3 +1,3 @@
-  <?php echo renderJS('sidebar'); ?>
+  <?php echo renderJS('sidebar', currentURLIs('/')); ?>
   </body>
 </html>

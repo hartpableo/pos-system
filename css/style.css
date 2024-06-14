@@ -35,15 +35,3 @@
   }
 }
 /* Components */
-
-.sidebar--open {
-  transform: translateX(100%);
-}
-
-.sidebar--open .sidebar-toggle {
-  left: calc(var(--width) * -1);
-}
-
-.sidebar--open .sidebar-toggle:hover {
-  --width: 16px;
-}

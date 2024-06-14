@@ -1,0 +1,20 @@
+.num-of-items {
+  --dimensions: 17px;
+  width: var(--dimensions);
+  height: var(--dimensions);
+  top: -.5em;
+  right: 2px;
+  padding: .15em;
+}
+
+.sidebar--close {
+  transform: translateX(100%);
+}
+
+.sidebar--close .sidebar-toggle {
+  left: calc(var(--width) * -1);
+}
+
+.sidebar--close .sidebar-toggle:hover {
+  --width: 16px;
+}

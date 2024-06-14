@@ -117,7 +117,7 @@ function getTemplate($path, $args = []) {
 /**
  * Get CSS
  */
-function renderCSS($css_file, $local = true) {
+function renderCSS($css_file, $condition = true, $local = true) {
   $markup = '<link rel="stylesheet" href="' . ROOT . '/css/' . $css_file;
 
   // Add query string for versioning if css is local
@@ -125,14 +125,14 @@ function renderCSS($css_file, $local = true) {
     $markup .= '?v=' . ASSET_VERSION;
   }
 
-  $markup .= '">';
-  return $markup;
+  $markup .= '">' . PHP_EOL;
+  return $condition ? $markup : '';
 }
 
 /**
  * Get JS
  */
-function renderJS($js_file, $local = true) {
+function renderJS($js_file, $condition = true, $local = true) {
   $markup = '<script src="' . ROOT . '/js/' . $js_file . '.js';
 
   // Add query string for versioning if js is local
@@ -140,8 +140,8 @@ function renderJS($js_file, $local = true) {
     $markup .= '?v=' . ASSET_VERSION;
   }
 
-  $markup .= '"></script>';
-  return $markup;
+  $markup .= '"></script>' . PHP_EOL;
+  return $condition ? $markup : '';
 }
 
 /**

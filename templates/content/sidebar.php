@@ -1,4 +1,4 @@
-<div class="sidebar sidebar--open transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl">
+<div class="sidebar sidebar--close transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl">
 
   <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
 
