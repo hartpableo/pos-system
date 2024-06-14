@@ -26,7 +26,13 @@
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
       <li>
-        <a href="/dashboard">Go to dashboard</a>
+        <?php getTemplate(
+            'components/navlink',
+            [
+              'navtext' => 'Go to dashboard',
+              'navlink' => '/dashboard'
+            ]
+        ); ?>
       </li>
 <!--      <li>-->
 <!--        <details>-->
