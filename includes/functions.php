@@ -147,8 +147,11 @@ function renderJS($js_file, $local = true) {
 /**
  * Get current URL
  */
-function currentURL() {
-  return $_SERVER['REQUEST_URI'];
+function currentURLIs($url) {
+  if (empty($url)) {
+    return FALSE;
+  }
+  return $_SERVER['REQUEST_URI'] === $url;
 }
 
 function isCurrentPage($value) {
