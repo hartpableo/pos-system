@@ -13,8 +13,8 @@ class CSRFToken {
     setSession('csrf_token_createtime', time());
   }
 
-  public function getToken(): string {
-    return $this->token;
+  public function getSessionToken(): string {
+    return $_SESSION['csrf_token'] ?? '';
   }
 
   public function validateToken( $token ): bool {

@@ -10,6 +10,8 @@
 </head>
 <body class="min-h-screen font-primary isolate py-6">
 
+<?php getTemplate('partials/message'); ?>
+
 <header role="banner" class="navbar bg-base-200 mx-auto px-4 container mb-7">
 
   <?php if (currentURLIs('/')) : ?>

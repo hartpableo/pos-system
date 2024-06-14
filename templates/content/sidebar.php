@@ -3,10 +3,6 @@
   <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
 
   <ul aria-label="Cart Items" class="flex flex-col gap-4 justify-start items-stretch pb-8 mb-8 border-b-2 border-b-solid border-b-gray-500">
-    <?php getTemplate('components/cart-item'); ?>
-    <?php getTemplate('components/cart-item'); ?>
-    <?php getTemplate('components/cart-item'); ?>
-    <?php getTemplate('components/cart-item'); ?>
   </ul>
 
   <!-- Total -->
