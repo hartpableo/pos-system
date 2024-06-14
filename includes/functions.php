@@ -33,43 +33,43 @@ function view($path, $method = 'GET', $data = []) {
 /**
  * Routing.
  */
-function route($uri, $method = 'GET', $data = []) {
-  $routes = [
-    '/' => 'home',
-    '/create-a-tip' => 'create-tip',
-    '/post-tip' => 'post-tip',
-    '/vote' => 'vote',
-    '/admin/login' => 'admin-login',
-    '/authenticate' => 'authenticate',
-    '/dashboard' => 'dashboard',
-    '/approve-tip' => 'approve-tip',
-    '/disapprove-tip' => 'disapprove-tip',
-  ];
-
-  // Protect admin routes
-  $protected_routes = [
-    '/dashboard',
-    '/approve-tip',
-    '/disapprove-tip',
-  ];
-  if (in_array($uri, $protected_routes) && !isAdmin()) {
-    http_response_code(404);
-    view('404');
-    return;
-  }
-
-  // Review request for upvote/downvote.
-  if ($uri === '/vote' && $_SERVER['REQUEST_METHOD'] !== 'POST') {
-    redirect();
-    return;
-  }
-
-  if (array_key_exists($uri, $routes)) {
-    view($routes[$uri], $method, $data);
-  } else {
-    view('404');
-  }
-}
+//function route($uri, $method = 'GET', $data = []) {
+//  $routes = [
+//    '/' => 'home',
+//    '/create-a-tip' => 'create-tip',
+//    '/post-tip' => 'post-tip',
+//    '/vote' => 'vote',
+//    '/admin/login' => 'admin-login',
+//    '/authenticate' => 'authenticate',
+//    '/dashboard' => 'dashboard',
+//    '/approve-tip' => 'approve-tip',
+//    '/disapprove-tip' => 'disapprove-tip',
+//  ];
+//
+//  // Protect admin routes
+//  $protected_routes = [
+//    '/dashboard',
+//    '/approve-tip',
+//    '/disapprove-tip',
+//  ];
+//  if (in_array($uri, $protected_routes) && !isAdmin()) {
+//    http_response_code(404);
+//    view('404');
+//    return;
+//  }
+//
+//  // Review request for upvote/downvote.
+//  if ($uri === '/vote' && $_SERVER['REQUEST_METHOD'] !== 'POST') {
+//    redirect();
+//    return;
+//  }
+//
+//  if (array_key_exists($uri, $routes)) {
+//    view($routes[$uri], $method, $data);
+//  } else {
+//    view('404');
+//  }
+//}
 
 /**
  * Redirect.
@@ -152,10 +152,6 @@ function currentURLIs($url) {
     return FALSE;
   }
   return $_SERVER['REQUEST_URI'] === $url;
-}
-
-function isCurrentPage($value) {
-  return $_SERVER['REQUEST_URI'] === $value;
 }
 
 /**

@@ -11,12 +11,12 @@
 
   <!-- Total -->
   <div class="flex justify-between items-center">
-  <div class="block text-2xl font-bold">
-    Total:
-  </div>
-  <div class="block text-3xl font-bold">
-    ₱225
-  </div>
+    <div class="block text-2xl font-bold">
+      Total:
+    </div>
+    <div class="block text-3xl font-bold">
+      ₱225
+    </div>
   </div>
   <!-- Total -->
 

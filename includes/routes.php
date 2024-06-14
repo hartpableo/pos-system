@@ -13,3 +13,4 @@ $router->add('GET', '/', 'home');
 
 // Dashboard
 $router->add('GET', '/dashboard', 'dashboard/main');
+$router->add('GET', '/dashboard/sales-history', 'dashboard/sales-history');
