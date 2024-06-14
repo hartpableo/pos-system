@@ -133,7 +133,7 @@ function renderCSS($css_file, $local = true) {
  * Get JS
  */
 function renderJS($js_file, $local = true) {
-  $markup = '<script src="' . ROOT . '/js/' . $js_file;
+  $markup = '<script src="' . ROOT . '/js/' . $js_file . '.js';
 
   // Add query string for versioning if js is local
   if ($local) {
