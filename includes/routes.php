@@ -16,6 +16,7 @@ $router->add('GET', '/dashboard', 'dashboard/main');
 $router->add('GET', '/dashboard/sales-history', 'dashboard/sales-history');
 $router->add('GET', '/dashboard/inventory', 'dashboard/inventory');
 $router->add('GET', '/product/add', 'dashboard/add-product');
+$router->add('GET', '/product/add/size', 'dashboard/add-product-size');
 
 // Product
 $router->add('POST', '/product/store', 'product/store');

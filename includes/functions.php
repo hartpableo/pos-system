@@ -167,3 +167,12 @@ function currentURLIs($url) {
 function isAdmin(): bool {
   return isset($_SESSION['user']['usertype']) && $_SESSION['user']['usertype'] === 'admin';
 }
+
+/**
+ * Get the query strings
+ */
+function getQueryStrings() {
+  $query = parse_url($_SERVER['REQUEST_URI'])['query'];
+  parse_str($query, $params);
+  return $params;
+}
