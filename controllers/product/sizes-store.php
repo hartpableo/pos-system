@@ -34,14 +34,17 @@ if (!empty(getErrorMessages())) {
 }
 
 // Insert data to db
-$products_data->query(
-  'INSERT INTO product_sizes (product_id, product_size, product_size_price) VALUES (:product_id, :product_size, :product_size_price)',
-  [
-    ':product_id' => $data['product_id'],
-    ':product_size' => $data['product_size'],
-    ':product_size_price' => $data['product_size_price']
-  ]
-);
+//$products_data->query(
+//  'INSERT INTO product_sizes (product_id, product_size, product_size_price) VALUES (:product_id, :product_size, :product_size_price)',
+//  [
+//    ':product_id' => $data['product_id'],
+//    ':product_size' => $data['product_size'],
+//    ':product_size_price' => $data['product_size_price']
+//  ]
+//);
+
+// @TODO: store the size variant to products.variants in db
+
 $related_product = $products_data->find('SELECT * FROM products WHERE id = :id', [':id' => $data['product_id']]);
 setSuccessMessage('A size variant for <strong>' . $related_product['product_name'] . '</strong> has been successfully added.');
 redirect('/dashboard/inventory');
