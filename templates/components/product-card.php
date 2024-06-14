@@ -2,8 +2,8 @@
   <div class="card w-96 max-w-full bg-base-100 shadow-xl">
     <figure class="relative">
       <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+      alt="Shoes"
       />
       <?php
       /**
@@ -17,7 +17,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">Product Name</h2>
-      <p class="text-2xl leading-none">₱ 45</p>
+      <p class="text-2xl leading-none">₱ <span class="price">45</span></p>
       <div class="flex justify-start items-center flex-wrap gap-2 my-4">
         <p class="flex-grow-0">Size:&nbsp;</p>
         <button type="button" class="text-base font-bold w-8 h-8 rounded-full border border-solid border-gray-300 bg-primary text-black border-black">

@@ -18,4 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
       cartBtn.style.pointerEvents = 'auto';
     }
   })
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      sidebar.classList.add('sidebar--close');
+      cartBtn.style.pointerEvents = 'auto';
+    }
+  })
 })
