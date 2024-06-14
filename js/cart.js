@@ -21,6 +21,7 @@ class Cart {
   updateTotalPrice(price) {
     this.totalPrice += price;
     document.getElementById('price-total').textContent = this.totalPrice;
+    document.getElementById('total_price').value = this.totalPrice;
   }
 
   updateItemsCount() {

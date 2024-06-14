@@ -9,13 +9,13 @@ const CartItem = (item) => {
   </div>
   <div class="ml-4 flex flex-1 flex-col">
     <div>
-      <div class="flex justify-between text-base font-medium">
+      <div class="flex flex-col justify-start items-stretch text-base font-medium">
         <h3>${item.name}</h3>
-        <p class="ml-3 whitespace-nowrap">₱ <span class="price">${item.price}</span></p>
+        <p class="whitespace-nowrap">₱ <span class="price">${item.price}</span></p>
       </div>
       <p class="qty">Qty 1</p>
     </div>
-    <div class="flex flex-1 items-end justify-between text-sm">
+    <div class="flex flex-1 items-end justify-between text-sm mt-2">
       <div class="flex gap-1">
         <button type="button" class="btn btn-sm btn-success text-white" aria-label="Increment current item">
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg pointer-events-none" viewBox="0 0 16 16">

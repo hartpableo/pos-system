@@ -8,7 +8,7 @@
   </div>
   <div class="ml-4 flex flex-1 flex-col">
     <div>
-      <div class="flex justify-between text-base font-medium">
+      <div class="flex flex-col justify-start items-stretch text-base font-medium">
         <h3>Product Name</h3>
         <p class="ml-3 whitespace-nowrap">₱ <span class="price">45</span></p>
       </div>

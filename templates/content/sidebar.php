@@ -30,7 +30,7 @@ $tokenizer->generateToken();
     </button>
     <form action="/checkout" method="POST">
       <input type="hidden" name="csrf_token" value="<?php echo $tokenizer->getSessionToken(); ?>" >
-      <input type="hidden" name="total_price" value="0" >
+      <input type="hidden" id="total_price" name="total_price" value="0" >
       <button type="submit" class="btn btn-success text-white">
         Proceed
       </button>

@@ -132,8 +132,15 @@ function renderCSS($css_file, $condition = true, $local = true) {
 /**
  * Get JS
  */
-function renderJS($js_file, $condition = true, $local = true) {
-  $markup = '<script src="' . ROOT . '/js/' . $js_file . '.js';
+function renderJS($js_file, $condition = true, $local = true, $is_module = false) {
+  $markup = '<script ';
+
+  // Add type="module" attribute if js is a module
+  if ($is_module) {
+    $markup .= 'type="module" ';
+  }
+
+  $markup .= 'src="' . ROOT . '/js/' . $js_file . '.js';
 
   // Add query string for versioning if js is local
   if ($local) {
