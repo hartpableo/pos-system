@@ -7,11 +7,12 @@ $tokenizer->generateToken();
 
 ?>
 
-<div class="sidebar sidebar--close hidden transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl w-80">
+<div class="sidebar sidebar--close hidden transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl w-80 overflow-y-scroll">
 
   <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
 
   <ul aria-label="Cart Items" class="flex flex-col gap-4 justify-start items-stretch pb-8 mb-8 border-b-2 border-b-solid border-b-gray-500">
+    <!-- Cart items -->
   </ul>
 
   <!-- Total -->

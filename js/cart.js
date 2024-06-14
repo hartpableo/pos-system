@@ -11,6 +11,7 @@ class Cart {
     this.logCartItems()
     this.updateCartItems()
     this.updateTotalPrice(parseFloat(item.price));
+    this.updateItemsCount();
   }
 
   logCartItems() {
@@ -20,6 +21,12 @@ class Cart {
   updateTotalPrice(price) {
     this.totalPrice += price;
     document.getElementById('price-total').textContent = this.totalPrice;
+  }
+
+  updateItemsCount() {
+    const itemsCount = document.querySelector('.num-of-items');
+    itemsCount.classList.remove('hidden');
+    itemsCount.textContent = Object.keys(this.cart).length;
   }
 
   get items() {
