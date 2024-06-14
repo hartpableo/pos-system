@@ -26,7 +26,7 @@ class Cart {
   updateItemsCount() {
     const itemsCount = document.querySelector('.num-of-items');
     itemsCount.classList.remove('hidden');
-    itemsCount.textContent = Object.keys(this.cart).length;
+    itemsCount.textContent = `${Object.keys(this.cart).length}`;
   }
 
   get items() {
