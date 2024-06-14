@@ -1,4 +1,4 @@
-<div class="sidebar sidebar--close transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl w-80">
+<div class="sidebar sidebar--close hidden transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl w-80">
 
   <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
 
@@ -10,9 +10,7 @@
     <div class="block text-2xl font-bold">
       Total:
     </div>
-    <div class="block text-3xl font-bold">
-      ₱225
-    </div>
+    <div id="price-total" class="block text-3xl font-bold"></div>
   </div>
   <!-- Total -->
 

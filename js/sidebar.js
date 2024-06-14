@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   document.addEventListener('click', (e) => {
-    if (!sidebar.contains(e.target) && e.target !== cartBtn) {
+    if (!sidebar.contains(e.target) && e.target !== cartBtn && !e.target.classList.contains('add-to-cart')) {
       sidebar.classList.add('sidebar--close');
       cartBtn.style.pointerEvents = 'auto';
     }
