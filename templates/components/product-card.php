@@ -1,5 +1,9 @@
+<?php
+$product = $args['product'];
+?>
+
 <div>
-  <div class="card w-96 max-w-full bg-base-100 shadow-xl">
+  <div class="card w-96 max-w-full bg-base-100 shadow-xl" id="<?php echo 'product-' . $product['id']; ?>">
     <figure class="relative">
       <img
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -16,8 +20,8 @@
       ?>
     </figure>
     <div class="card-body">
-      <h2 class="card-title">Product Name</h2>
-      <p class="text-2xl leading-none">₱ <span class="price">45</span></p>
+      <h2 class="card-title"><?php echo $product['product_name']; ?></h2>
+      <p class="text-2xl leading-none">₱ <span class="price"><?php echo $product['product_price']; ?></span></p>
       <div class="flex justify-start items-center flex-wrap gap-2 my-4">
         <p class="flex-grow-0">Size:&nbsp;</p>
         <button type="button" class="text-base font-bold w-8 h-8 rounded-full border border-solid border-gray-300 bg-primary text-black border-black">

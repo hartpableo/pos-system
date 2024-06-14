@@ -28,12 +28,13 @@ if (!$validator->checkTextLength($data['product_price'], 1, 10)) {
   setErrorMessage('Price must not be empty or must be between 1 and 10 characters.');
 }
 
+if (!$validator->checkNumber($data['product_price'])) {
+  setErrorMessage('Please enter a valid price.');
+}
+
 if (!empty(getErrorMessages())) {
   redirect('/product/add');
 }
-
-// Preprocess data
-$data['product_price'] = number_format($data['product_price'], 2);
 
 // Insert data
 $db->query(

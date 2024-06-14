@@ -1,4 +1,11 @@
-<?php getTemplate('partials/header-dashboard'); ?>
+<?php
+
+use App\Products;
+
+$products_data = new Products();
+$all_products = $products_data->getAllProducts();
+
+getTemplate('partials/header-dashboard'); ?>
 
 <main>
   <div class="container">
@@ -16,9 +23,10 @@
         </a>
       </div>
     </div>
+
+    <?php if (!empty($all_products)) : ?>
     <div class="overflow-x-auto">
       <table class="table text-base">
-        <!-- head -->
         <thead class="text-base">
           <tr>
             <th class="text-white">&nbsp;</th>
@@ -30,16 +38,19 @@
           </tr>
         </thead>
         <tbody>
-        <tr class="hover">
-          <th>1</th>
-          <td>Lemon Juice M</td>
-          <td>₱ 45</td>
-          <td>₱ 100</td>
-          <td>₱ 55</td>
-          <td>mm-dd-yyyy</td>
-        </tr>
+          <?php foreach($all_products as $index => $product) : ?>
+            <tr class="hover">
+              <th><?php echo $index + 1; ?></th>
+              <td><?php echo $product['product_name']; ?></td>
+              <td>₱ <?php echo $product['product_price']; ?></td>
+              <td>₱ 100</td>
+              <td>₱ 55</td>
+              <td>mm-dd-yyyy</td>
+            </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>
+    <?php endif; ?>
   </div>
 </main>
