@@ -1,3 +1,12 @@
+<?php
+
+use App\CSRFToken;
+
+$tokenizer = new CSRFToken();
+$tokenizer->generateToken();
+
+?>
+
 <div class="sidebar sidebar--close hidden transition-all fixed right-0 top-0 h-full bg-base-300 z-50 py-6 px-6 shadow-2xl w-80">
 
   <h2 class="text-3xl font-bold mb-6 leading-none">Cart</h2>
@@ -19,6 +28,8 @@
       Cancel Order
     </button>
     <form action="/checkout" method="POST">
+      <input type="hidden" name="csrf_token" value="<?php echo $tokenizer->getSessionToken(); ?>" >
+      <input type="hidden" name="total_price" value="0" >
       <button type="submit" class="btn btn-success text-white">
         Proceed
       </button>
