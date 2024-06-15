@@ -35,7 +35,7 @@ getTemplate('partials/header-dashboard'); ?>
             <th class="text-white">Amount given by customer</th>
             <th class="text-white">Change</th>
             <th class="text-white">Transaction Date (mm-dd-yyyy)</th>
-            <th class="text-white">Actions</th>
+<!--            <th class="text-white">Actions</th>-->
           </tr>
         </thead>
         <tbody>
@@ -47,9 +47,9 @@ getTemplate('partials/header-dashboard'); ?>
               <td>₱ 100</td>
               <td>₱ 55</td>
               <td>mm-dd-yyyy</td>
-              <td>
-                <a href="<?php echo '/product/add/size?_product_id=' . $product['id']; ?>" class="font-bold text-sm hover:underline">Add size variant</a>
-              </td>
+<!--              <td>-->
+<!--                <a href="--><?php //echo '/product/add/size?_product_id=' . $product['id']; ?><!--" class="font-bold text-sm hover:underline">Add size variant</a>-->
+<!--              </td>-->
             </tr>
           <?php endforeach; ?>
         </tbody>

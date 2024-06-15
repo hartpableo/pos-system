@@ -38,23 +38,23 @@ if (!empty($product_variants)) {
         ₱ <span id="price-<?php echo $product['id']; ?>" class="price"><?php echo $product['product_price']; ?></span>
       </p>
 
-      <?php if (!empty($product_sizes)) : ?>
-      <div class="flex justify-start items-center flex-wrap gap-2 my-4">
-        <p class="flex-grow-0">Size:&nbsp;</p>
-        <?php
-          foreach ($product_sizes as $variant => $price) {
-            getTemplate(
-              'components/size-button',
-              [
-                'product_id' => $product['id'],
-                'size' => $variant,
-                'price' => $price,
-              ]
-            );
-          }
-        ?>
-      </div>
-      <?php endif; ?>
+<!--      --><?php //if (!empty($product_sizes)) : ?>
+<!--      <div class="flex justify-start items-center flex-wrap gap-2 my-4">-->
+<!--        <p class="flex-grow-0">Size:&nbsp;</p>-->
+<!--        --><?php
+//          foreach ($product_sizes as $variant => $price) {
+//            getTemplate(
+//              'components/size-button',
+//              [
+//                'product_id' => $product['id'],
+//                'size' => $variant,
+//                'price' => $price,
+//              ]
+//            );
+//          }
+//        ?>
+<!--      </div>-->
+<!--      --><?php //endif; ?>
 
       <div class="card-actions justify-end">
         <button
