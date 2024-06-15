@@ -11,27 +11,3 @@
   }
 }
 /* Base */
-
-/* Components */
-@layer components {
-  .sidebar-toggle {
-    --width: 12px;
-    display: block;
-    width: var(--width);
-    height: 90px;
-    position: absolute;
-    z-index: 1;
-    background-color: #fff;
-    opacity: .7;
-    top: 50%;
-    transform: translateY(-50%);
-    left: calc((var(--width) / 2) * -1);
-    cursor: pointer;
-    border-radius: 2px;
-  }
-
-  .sidebar-toggle:hover {
-    opacity: 1;
-  }
-}
-/* Components */
