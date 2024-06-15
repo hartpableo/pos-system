@@ -5,11 +5,6 @@ use App\Products;
 $products_data = new Products();
 
 $product = $args['product'];
-$product_sizes = [];
-$product_variants = $products_data->getProductVariants($product['id']);
-if (!empty($product_variants)) {
-  $product_sizes = $product_variants;
-}
 
 ?>
 

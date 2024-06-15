@@ -24,6 +24,10 @@ if (!$validator->checkTextLength($data['product_name'], 5, 50)) {
   setErrorMessage('Username must not be empty or must be between 5 and 50 characters.');
 }
 
+if ($db->find('SELECT product_name FROM products WHERE product_name = :product_name', [':product_name' => $data['product_name']])) {
+  setErrorMessage('The product <strong>' . $data['product_name'] . '</strong> already exists. Specify in the name if this is a different variant.');
+}
+
 if (!$validator->checkTextLength($data['product_price'], 1, 10)) {
   setErrorMessage('Price must not be empty or must be between 1 and 10 characters.');
 }

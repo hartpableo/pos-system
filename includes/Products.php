@@ -4,7 +4,7 @@ namespace App;
 
 class Products extends Database {
   public function getAllProducts() {
-    return $this->findAll('SELECT * FROM products');
+    return $this->findAll('SELECT * FROM products ORDER BY product_name ASC');
   }
 
   public function findProductById($id) {

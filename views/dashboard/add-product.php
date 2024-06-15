@@ -31,7 +31,7 @@ getTemplate('partials/header-dashboard');
         </div>
       </div>
 
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-success text-white">Submit</button>
 
     </form>
     <!-- Form -->

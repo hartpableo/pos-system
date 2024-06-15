@@ -20,4 +20,3 @@ $router->add('GET', '/product/add/size', 'dashboard/add-product-size');
 
 // Product
 $router->add('POST', '/product/store', 'product/store');
-$router->add('POST', '/product/size/store', 'product/sizes-store');
