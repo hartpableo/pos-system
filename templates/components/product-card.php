@@ -1,9 +1,20 @@
 <?php
+
+use App\Products;
+
+$products_data = new Products();
+
 $product = $args['product'];
+$product_sizes = [];
+$product_variants = $products_data->getProductVariants($product['id']);
+if (!empty($product_variants)) {
+  $product_sizes = $product_variants;
+}
+
 ?>
 
 <div>
-  <div class="card w-96 max-w-full bg-base-100 shadow-xl" id="<?php echo 'product-' . $product['id']; ?>">
+  <div class="card w-96 h-full max-w-full bg-base-100 shadow-xl" id="<?php echo 'product-' . $product['id']; ?>">
     <figure class="relative">
       <img
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -23,21 +34,31 @@ $product = $args['product'];
       <h2 class="card-title">
         <?php echo $product['product_name']; ?>
       </h2>
-      <p class="text-2xl leading-none">₱ <span class="price"><?php echo $product['product_price']; ?></span></p>
+      <p class="text-2xl leading-none">
+        ₱ <span id="price-<?php echo $product['id']; ?>" class="price"><?php echo $product['product_price']; ?></span>
+      </p>
+
+      <?php if (!empty($product_sizes)) : ?>
       <div class="flex justify-start items-center flex-wrap gap-2 my-4">
         <p class="flex-grow-0">Size:&nbsp;</p>
-        <button type="button" class="text-base font-bold w-8 h-8 rounded-full border border-solid border-gray-300 bg-primary text-black border-black">
-          S
-        </button>
-        <button type="button" class="text-base font-bold w-8 h-8 rounded-full border border-solid border-gray-300 hover:bg-primary hover:text-black hover:border-black">
-          M
-        </button>
-        <button type="button" class="text-base font-bold w-8 h-8 rounded-full border border-solid border-gray-300 hover:bg-primary hover:text-black hover:border-black">
-          L
-        </button>
+        <?php
+          foreach ($product_sizes as $variant => $price) {
+            getTemplate(
+              'components/size-button',
+              [
+                'product_id' => $product['id'],
+                'size' => $variant,
+                'price' => $price,
+              ]
+            );
+          }
+        ?>
       </div>
+      <?php endif; ?>
+
       <div class="card-actions justify-end">
         <button
+          id="add-to-cart-<?php echo $product['id']; ?>"
           class="add-to-cart btn btn-primary"
           type="button"
           data-product-id="<?php echo $product['id']; ?>"
